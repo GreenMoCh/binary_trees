@@ -49,5 +49,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	height = binary_tree_height(tree);
 	size = binary_tree_size(tree);
 
-	return (size == (1ULL << height) - 1);
+	return (size == (1ULL << (height + 1)) - 1);
 }
